@@ -22,7 +22,7 @@ p {
 
 nav {
   height: 50px;
-  background-color: #000;
+  background-color: #941515;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -90,7 +90,7 @@ nav a {
   font-weight: bold;
 }
 .modal .alert .feedback span {
-  color: crimson;
+  color: black;
 }
 .modal .alert .buttons {
   display: flex;
@@ -103,14 +103,199 @@ nav a {
   cursor: pointer;
   padding: 20px 40px;
   border-radius: 10px;
-  background-color: rgba(24, 118, 190, 0.7);
+  background-color: #941515;
   color: #fff;
 }
 .modal .alert .buttons .close {
   cursor: pointer;
   padding: 20px 40px;
   border-radius: 10px;
-  background-color: rgba(24, 118, 190, 0.7);
+  background-color: #941515;
+  color: #fff;
+}
+
+.loader {
+  color: #fff;
+  font-size: 26px;
+  animation: fade 2s infinite; /* Apply the fade animation */
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.banner {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.banner img {
+  width: 980px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.about {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #333;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.gallery {
+  padding: 10px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about {
+  text-align: center;
+  padding: 20px;
+}
+
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about img {
+  width: 600px;
+  height: 400px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+  font-size: 18px;
+  color: #333;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modal-background {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+.modal .alert {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal .alert .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 15px;
+}
+.modal .alert .feedback {
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal .alert .feedback span {
+  color: black;
+}
+.modal .alert .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 40px;
+}
+.modal .alert .buttons .save {
+  cursor: pointer;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #941515;
+  color: #fff;
+}
+.modal .alert .buttons .close {
+  cursor: pointer;
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: #941515;
   color: #fff;
 }
 
